@@ -1,0 +1,6 @@
+[submodule "MG_v233"]
+	path = MG_v233
+	url = https://github.com/restrepo/madgraph
+[submodule "madgraph"]
+	path = madgraph
+	url = git@github.com:restrepo/madgraph.git

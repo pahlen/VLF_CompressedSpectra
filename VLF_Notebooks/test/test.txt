@@ -1,0 +1,23 @@
+import model InertDoublet_UFO
+define p = g u c d s b u~ c~ d~ s~ b~
+define j = p
+define l+ = e+ mu+
+define l- = e- mu-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+
+generate p p > h2 h2 j j @0
+
+output ../test/BP_750_110_vs_lambdaL
+
+launch ../test/BP_750_110_vs_lambdaL
+0
+../MadGraph_cards/benchmarks/param_card_template.dat
+../Cards/run_card.dat
+set wa0 auto
+set whch auto
+set lamL 0.01
+0
+
+launch ../test/BP_750_110_vs_lambdaL -i
+print_results --path=./result_BP_750_110_vs_lamdaL_mh0_110.txt --format=short
